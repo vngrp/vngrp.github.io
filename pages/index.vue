@@ -43,7 +43,7 @@
 	
 	<!-- Pin to top right corner -->
 	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
-		<button class="js-change-theme focus:outline-none">🌙</button>
+		<button v-on:click="switchDarkAndLightMode" class="js-change-theme focus:outline-none">🌙</button>
 	  </div>
 
   
@@ -58,7 +58,12 @@ export default Vue.extend({
   head: {
     bodyAttrs: {
       class: ['font-sans', 'antialiased', 'text-gray-900', 'leading-normal', 'tracking-wider bg-cover'],
-      background: 'cherry-blossom-background.jpg'
+      background: 'background-light.jpg'
+    },
+  },
+  methods: {
+    switchDarkAndLightMode() {
+      document.body.style.background = 'background-dark.jpg'
     }
   }
 })
