@@ -22,7 +22,7 @@
 			</div>
 
 			<!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
-
+      <p class="pt-8 text-sm">+31 6 30 500 947 | 80075983 | NL003389668B46</p>
 		</div>
 
 	</div>
